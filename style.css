@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: #2D25A0;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.navigation a {
+    margin: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu {
+    padding: 10px 20px;
+}
+
+.login,
+.watch {
+    background-color: #E02C6D;
+    padding: 10px 20px;
+}
+
+.fa-sign-in-alt {
+    margin: 0 8px;
+}
+
+.front-page {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    align-items: center;
+}
+
+.banner img {
+    width: 556px;
+}
