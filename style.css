@@ -28,6 +28,11 @@ a {
     text-decoration: none;
     color: white;
 }
+.menu, .nav:hover{
+    color: #E02C6D;
+    
+
+}
 h1{
     height: 230px;
     font-size: 64px;
@@ -117,15 +122,14 @@ h1{
     margin-top: 50px;
     margin-left: 20px;
 }
-#live-watch-down{
+#live-watch{
     margin-top: 100px;
 }
 .highlights h1{
     color:black;
     width: 469px;
     height: 120px;
-    
-    font-style: 700;
+    font-style: 700px;
     font-weight: bold;
     font-size: 48px;
     line-height: 60px;
@@ -142,13 +146,130 @@ h1{
     background-color: #E02C6D;
     align-items: center;
 }
+hr{
+    border: 1px solid #D1D1D1;
+    margin-bottom: 27px;
+}
+/* top players style */
+.top-players{
+    margin-bottom: 30px;
+}
+.section-title{
+    color: #562EFF;
+    font-size: 24px;
+    margin-top: 3px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.player img{
+    height: 56px;
+    width: 56px;
 
+}
+.player-name{
+    margin-left: 16px;
+    font-size: 18px;
+}
+           /* top blog style */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+}
+.blog{
+    display: flex;
+}
+.blog .thumbnail img{
+    width: 177px;
+    height: 117px;
+}
+.blog-info{
+    margin-left: 16px;
+}
+.blog-title{
+    font-size: 20px;
+}
+.blog-author{
+    color: #9F9F9F;
+    font-size: 16px;
+}
+.blog-author a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #562EFF;
+}
+/* courses style */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+.course .course-banner img{
+    width: 224px;
+    height: 104px;
+    border-radius: 10px;
+}
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled{
+    color: #FFC014;
+}
+.fa-star.empty{
+    color: #AEAEAE;
+}
+.course-duration{
+    background-color: rgb(223, 101, 101);
+    padding: 3px;
+    border-radius: 15px;
+}
+
+
+/*****************
+        parter section
+
+        ************/
+        .partner hr{
+            width: 80%;
+            margin-top: 50px;
+        }
+        .partner h1{
+            font-size: 30px;color: black;
+            text-align: center;
+        }
+        .partner-logo {
+            margin-left: 260px;
+            display: grid;
+            grid-template-columns: repeat(3, 2fr);
+        }
+        .partner-logo img{
+            height: 200px;
+            width: 200px;
+            transition: transfrom .2s;
+            margin-left: 20px;
+        }
+        .partner-logo img:hover{
+            transform: scale(1.2);
+            overflow: hidden;
+        }
 
 /*****************
 
          Footer Content start
 
-            ********************/
+        ********************/
 
 
 footer{
@@ -179,34 +300,11 @@ footer{
     width: 32px;
     height: 32px;
 }
-.partner hr{
-    width: 80%;
-    margin-top: 50px;
-}
-.partner h1{
-    font-size: 30px;color: black;
-    text-align: center;
-}
-.partner-logo {
-    margin-left: 260px;
-    display: grid;
-    grid-template-columns: repeat(3, 2fr);
-}
-.partner-logo img{
-    height: 200px;
-    width: 200px;
-    transition: transfrom .2s;
-    margin-left: 20px;
-}
-.partner-logo img:hover{
-    transform: scale(1.2);
-    overflow: hidden;
-}
 #social-icons, img{
     margin: 10px;
     transition: transfrom .2s;
 }
-#social-icons, img:hover{
+#social-icons, .logo:hover{
     color: red;
     transform: scale(1.2);
 
@@ -214,7 +312,7 @@ footer{
 /**************
         responsive
         **************/
-    @media screen and (max-width: 580px) {
+    @media screen and (max-width: 688px){
         .navigation{
             display: none;
         }
@@ -230,6 +328,18 @@ footer{
             height: 200px;
             margin-top: 10px;      
         }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            margin-top: 30px;
+            max-width: 1100px;
+        }
+        .contain{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
         .title h1{
             justify-content: center;
             font-weight: bold;
@@ -243,5 +353,51 @@ footer{
             display: grid;
             grid-template-columns: repeat(1,1fr);
             margin-left: 10px;        
+        }
+        .partner, .partner-logo {
+            display: none;
+        }    
+    }
+    @media  screen and (min-width: 688px) and (max-width:992px){
+        .front-page{
+            width: 100%;
+            height: 695px;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            margin-left: 10px;        
+        }
+        .banner img{
+            width: 350px;
+            height: 200px;
+            margin-top: 10px;      
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+            margin-top: 30px;
+            max-width: 1100px;
+        }
+        .contain{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .title h1{
+            justify-content: center;
+            font-weight: bold;
+            font-size: 44px;
+            color: #FFFFFF;
+            margin-top: 73px;
+            margin-left: 20px;   
+        }
+        .flexible{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            margin-left: 10px;        
+        }
+        .partner, .partner-logo {
+            display: none;
         }
     }
