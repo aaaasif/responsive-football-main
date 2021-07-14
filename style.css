@@ -39,7 +39,6 @@ h1{
     background-color: #E02C6D;
     padding: 10px 20px;
 }
-
 .fa-sign-in-alt {
     margin: 0 8px;
 }
@@ -55,6 +54,10 @@ h1{
 }
 .banner img {
     width: 556px;
+    transition: width 2s, height 2s, transform 5s;
+}
+.banner img:hover{
+    transform: rotate(360deg);
 }
 
 /**********
@@ -176,3 +179,31 @@ footer{
     width: 32px;
     height: 32px;
 }
+/**************
+        responsive
+        **************/
+    @media screen and (max-width: 580px) {
+        .navigation{
+            display: none;
+        }
+        .front-page{
+            width: 100%;
+            height: 695px;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            margin-left: 10px;        
+        }
+        .banner img{
+            width: 350px;
+            height: 200px;
+            margin-top: 10px;      
+        }
+        .title h1{
+            justify-content: center;
+            font-weight: bold;
+            font-size: 44px;
+            color: #FFFFFF;
+            margin-top: 73px;
+            margin-left: 20px;   
+        }
+    }
